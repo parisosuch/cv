@@ -7,7 +7,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 let data = {
     name: "Paris Osuch",
     initials: "PO",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus. Fusce hendrerit pulvinar elit, eu maximus diam elementum non.Donec varius diam ac dignissim mollis. Nullam venenatis lorem nisl, ut viverra orci rhoncus eu. Suspendisse dignissim non velit eu interdum. Duis varius commodo ipsum faucibus malesuada.",
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus.",
     location: "Sacramento, CA. United States.",
     socials: [
         {
@@ -22,7 +22,8 @@ let data = {
         },
     ],
     avatar: {
-
+        src: "/me.jpg",
+        alt: "me"
     }
 }
 
@@ -32,7 +33,7 @@ export default function Header() {
             {/* Header Details Section */}
             <div className="w-3/4 space-y-2">
                 <h1 className="text-4xl font-bold">{data.name}</h1>
-                <p className="">{data.summary}</p>
+                <p>{data.summary}</p>
                 <p>{data.location}</p>
                 <div className="space-x-2">
                     {data.socials.map((social, index) => (
@@ -47,7 +48,7 @@ export default function Header() {
             {/* Avatar Section */}
             <div className="flex w-1/4 items-center justify-center">
                 <Avatar className="size-28">
-                    <AvatarImage src="/me.jpg" alt="me" className="object-cover" />
+                    <AvatarImage src={data.avatar.src} alt={data.avatar.alt} className="object-cover" />
                     <AvatarFallback>{data.initials}</AvatarFallback>
                 </Avatar>
             </div>
