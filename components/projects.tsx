@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <div className="w-full space-y-2">
       <h1 className="text-2xl font-bold">Projects</h1>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
