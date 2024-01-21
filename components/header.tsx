@@ -23,13 +23,13 @@ let data = {
     ],
     avatar: {
         src: "/me.jpg",
-        alt: "me"
+        alt: "Me. Photo Creds: Constance Gonzalez <3"
     }
 }
 
 export default function Header() {
     return (
-        <div className="flex flex-row bg-blue-300 items-center justify-center">
+        <div className="flex flex-row items-center justify-center w-full">
             {/* Header Details Section */}
             <div className="w-3/4 space-y-2">
                 <h1 className="text-4xl font-bold">{data.name}</h1>
