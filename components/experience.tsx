@@ -28,17 +28,19 @@ let experience = [
 export default function Experience() {
   return (
     <div className="w-full space-y-2">
-      <h1 className="text-2xl font-bold">Experience</h1>
+      <h1 className="text-lg sm:text-2xl font-bold">Experience</h1>
       <div className="space-y-8 font-mono">
         {experience.map((content, index) => (
           <div key={index} className="space-y-2">
             <div className="flex flex-row w-full justify-between items-center">
-              <h2 className="font-semibold text-lg">{content.position}</h2>
-              <p className="text-gray-500 text-sm text-center">
+              <h2 className="font-semibold text-sm sm:text-lg">
+                {content.position}
+              </h2>
+              <p className="text-gray-500 text-sm sm:text-lg text-center">
                 {content.start} - {content.end}
               </p>
             </div>
-            <p className="text-md font-light">{content.name}</p>
+            <p className="text-xs sm:text-sm font-light">{content.name}</p>
             <p className="text-sm">{content.summary}</p>
           </div>
         ))}

@@ -27,8 +27,8 @@ let skills = [
 export default function Skills() {
   return (
     <div className="w-full space-y-2">
-      <h1 className="text-2xl font-bold">Skills</h1>
-      <div className="space-x-1">
+      <h1 className="text-lg sm:text-2xl font-bold">Skills</h1>
+      <div className="sm:space-x-1">
         {skills.map((skill, index) => (
           <Badge variant="outline" key={index} className="font-mono">
             {skill}

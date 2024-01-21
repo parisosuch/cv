@@ -26,14 +26,14 @@ let projects = [
 export default function Projects() {
   return (
     <div className="w-full space-y-2">
-      <h1 className="text-2xl font-bold">Projects</h1>
+      <h1 className="text-lg sm:text-2xl font-bold">Projects</h1>
       <div className="space-y-4 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6">
         {projects.map((project, index) => (
           <div
             key={index}
             className="space-y-2 border-2 border-gray-200 shadow-sm rounded-md p-2"
           >
-            <h2 className="font-semibold text-lg hover:underline">
+            <h2 className="font-semibold text-sm sm:text-lg hover:underline">
               <a href={project.url} target="_blank">
                 {project.name}
               </a>

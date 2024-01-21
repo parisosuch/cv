@@ -28,11 +28,11 @@ let data = {
 
 export default function Header() {
   return (
-    <div className="flex flex-row items-center justify-center w-full">
+    <div className="flex flex-row items-center space-x-2 sm:space-x-0 justify-center w-full">
       {/* Header Details Section */}
       <div className="w-3/4 space-y-2">
-        <h1 className="text-4xl font-bold">{data.name}</h1>
-        <p className="font-mono">{data.summary}</p>
+        <h1 className="text-2xl sm:text-4xl font-bold">{data.name}</h1>
+        <p className="font-mono text-sm sm:text-md">{data.summary}</p>
         <div className="flex flex-row space-x-2 items-center">
           <BsGlobe />
           <p className="font-mono text-xs sm:text-sm underline">
@@ -51,7 +51,7 @@ export default function Header() {
       </div>
       {/* Avatar Section */}
       <div className="flex w-1/4 items-center justify-center">
-        <Avatar className="size-28">
+        <Avatar className="size-24 sm:size-28">
           <AvatarImage
             src={data.avatar.src}
             alt={data.avatar.alt}
