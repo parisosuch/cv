@@ -3,7 +3,7 @@ let experience = [
     name: "Nelson & Kennard",
     position: "Junior Software Engineer",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus. Fusce hendrerit pulvinar elit, eu maximus diam elementum non.Donec varius diam ac dignissim mollis. Nullam venenatis lorem nisl, ut viverra orci rhoncus eu. Suspendisse dignissim non velit eu interdum. Duis varius commodo ipsum faucibus malesuada.",
+      "Automated business processes using Python, Pandas, and SQL. Developed scalable back-end services with Django and Flask, designed user-friendly interfaces using React and Tailwind CSS. Created REST API Logging microservice, applied Pandas for data analysis, enhancing efficiency and supporting data-driven decisions.",
     start: "2023",
     end: "Current",
   },
@@ -11,7 +11,7 @@ let experience = [
     name: "Sonoma State University",
     position: "Undergraduate Researcher",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus. Fusce hendrerit pulvinar elit, eu maximus diam elementum non.Donec varius diam ac dignissim mollis. Nullam venenatis lorem nisl, ut viverra orci rhoncus eu. Suspendisse dignissim non velit eu interdum. Duis varius commodo ipsum faucibus malesuada.",
+      "Recipient of the Koret Scholarship to develop the open-source Python library QCpy, focusing on simulating quantum circuits. Part of an undergraduate team uniquely invited to SIGCSE 2023, a prestigious international conference for computer science education. Coauthored a peer-reviewed abstract published in the ACM Digital Library of research papers.",
     start: "2021",
     end: "2023",
   },
@@ -19,7 +19,7 @@ let experience = [
     name: "Sonoma State University",
     position: "Web Developer",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus. Fusce hendrerit pulvinar elit, eu maximus diam elementum non.Donec varius diam ac dignissim mollis. Nullam venenatis lorem nisl, ut viverra orci rhoncus eu. Suspendisse dignissim non velit eu interdum. Duis varius commodo ipsum faucibus malesuada.",
+      "Utilized Drupal, HTML5, CSS3, and JavaScript to generate content for department sites. Achieved a 12% increase in site traffic, as per Google Analytics, through effective Search Engine Optimization (SEO) strategies. Automated legacy site content retrieval using web scraping with Beautiful Soup 4 in Python.",
     start: "2019",
     end: "2021",
   },

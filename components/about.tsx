@@ -1,6 +1,6 @@
 let data = {
   about:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus. Fusce hendrerit pulvinar elit, eu maximus diam elementum non.Donec varius diam ac dignissim mollis. Nullam venenatis lorem nisl, ut viverra orci rhoncus eu. Suspendisse dignissim non velit eu interdum. Duis varius commodo ipsum faucibus malesuada.",
+    "Experienced Full Stack Engineer with a passion for creating seamless user experiences. Over four years of hands-on experience in developing and implementing robust web applications. Proficient in both front-end and back-end technologies, with a keen focus on user-centric design. Adept at collaborating with cross-functional teams to deliver high-quality software solutions. Strong problem-solving skills and a commitment to staying abreast of emerging technologies in the rapidly evolving tech landscape.",
 };
 
 export default function About() {
