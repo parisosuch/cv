@@ -30,7 +30,7 @@ export default function Skills() {
       <h1 className="text-2xl font-bold">Skills</h1>
       <div className="space-x-1">
         {skills.map((skill, index) => (
-          <Badge variant="outline" key={index}>
+          <Badge variant="outline" key={index} className="font-mono">
             {skill}
           </Badge>
         ))}

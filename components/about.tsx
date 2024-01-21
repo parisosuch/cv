@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="w-full space-y-2">
       <h1 className="text-2xl font-bold">About</h1>
-      <p className="">{data.about}</p>
+      <p className="font-mono">{data.about}</p>
     </div>
   );
 }

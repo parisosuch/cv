@@ -15,7 +15,7 @@ export default function Education() {
           {education.start} - {education.end}
         </p>
       </div>
-      <p className="text-md font-light">{education.study}</p>
+      <p className="text-md font-light font-mono">{education.study}</p>
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function Experience() {
   return (
     <div className="w-full space-y-2">
       <h1 className="text-2xl font-bold">Experience</h1>
-      <div className="space-y-8">
+      <div className="space-y-8 font-mono">
         {experience.map((content, index) => (
           <div key={index} className="space-y-2">
             <div className="flex flex-row w-full justify-between items-center">

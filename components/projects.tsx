@@ -33,11 +33,15 @@ export default function Projects() {
             key={index}
             className="space-y-2 border-2 border-gray-200 shadow-sm rounded-md p-2"
           >
-            <h2 className="font-semibold text-lg">{project.name}</h2>
-            <p className="text-sm">{project.description}</p>
+            <h2 className="font-semibold text-lg hover:underline">
+              <a href={project.url} target="_blank">
+                {project.name}
+              </a>
+            </h2>
+            <p className="text-xs font-mono">{project.description}</p>
             <div>
               {project.tags.map((tag, tagIndex) => (
-                <Badge variant="outline" key={tagIndex}>
+                <Badge variant="outline" key={tagIndex} className="font-mono">
                   {tag}
                 </Badge>
               ))}
