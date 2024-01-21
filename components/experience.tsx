@@ -1,6 +1,6 @@
 let experience = [
   {
-    name: "Nelson Kennard",
+    name: "Nelson & Kennard",
     position: "Junior Software Engineer",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at tincidunt lacus. Fusce hendrerit pulvinar elit, eu maximus diam elementum non.Donec varius diam ac dignissim mollis. Nullam venenatis lorem nisl, ut viverra orci rhoncus eu. Suspendisse dignissim non velit eu interdum. Duis varius commodo ipsum faucibus malesuada.",

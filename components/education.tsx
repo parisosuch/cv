@@ -1,6 +1,6 @@
 let education = {
   name: "Sonoma State University",
-  study: "Computer Science",
+  study: "Computer Science and Astronomy",
   start: "2018",
   end: "2023",
 };
