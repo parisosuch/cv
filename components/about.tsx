@@ -5,7 +5,7 @@ let data = {
 export default function About() {
     return (
         <div className="w-full">
-            <h1 className="text-4xl font-bold">About</h1>
+            <h1 className="text-2xl font-bold">About</h1>
             <p className="">{data.about}</p>
         </div>
     );
