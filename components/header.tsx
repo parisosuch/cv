@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { BsGithub, BsLinkedin, BsGlobe } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsGlobe, BsMailbox } from "react-icons/bs";
 
 // define the header data
 let data = {
@@ -18,6 +18,11 @@ let data = {
       name: "LinkedIn",
       icon: <BsLinkedin className="size-6" />,
       url: "https://www.linkedin.com/in/parisosuch/",
+    },
+    {
+      name: "Mail",
+      icon: <BsMailbox className="size-6" />,
+      url: "mailto:paris@parisosuch.com/",
     },
   ],
   avatar: {
