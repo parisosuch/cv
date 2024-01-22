@@ -20,9 +20,9 @@ export default function RootLayout({
       <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
         <div className="w-full flex justify-center p-2 sm:p-0 bg-gray-100">
           {children}
+          <Analytics />
         </div>
-      	<Analytics/>
-	</body>
+      </body>
     </html>
   );
 }
