@@ -22,7 +22,7 @@ let data = {
     {
       name: "Mail",
       icon: <BsMailbox className="size-6" />,
-      url: "mailto:paris@parisosuch.com/",
+      url: "mailto:paris@parisosuch.com",
     },
   ],
   avatar: {
