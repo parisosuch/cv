@@ -21,6 +21,12 @@ let projects = [
     url: "https://github.com/parisosuch-dev/copycat",
     tags: ["Python", "Django", "Django Rest Framework", "REST", "API"],
   },
+  {
+    name: "CV",
+    description: "Quick and clean CV website. What you are currently looking at right now.",
+    url: "https://github.com/parisosuch-dev/cv",
+    tags: ["NextJS", "Tailwind", "Vercel", "Shadcn"],
+  },
 ];
 
 export default function Projects() {
