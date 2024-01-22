@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/react';
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
@@ -20,7 +21,8 @@ export default function RootLayout({
         <div className="w-full flex justify-center p-2 sm:p-0 bg-gray-100">
           {children}
         </div>
-      </body>
+      	<Analytics/>
+	</body>
     </html>
   );
 }
