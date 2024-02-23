@@ -36,6 +36,19 @@ export class Analytics {
             await redis.expire(key, this.retention)
         }
     }
+
+    // retrieve data by days backs
+    async retrieve(namespace: string, date: string) {
+        const res = await redis.hgetall<Record<string, string>>(`analytics::${namespace}::${date}`)
+
+        return {
+            date,
+            // return list of events that are key value pair with the value being a number
+            events: Object.entries(res ?? []).map(([key, value]) => ({
+                [key]: Number(value),
+            })),
+        }
+    }
 }
 
 export const analytics = new Analytics();
