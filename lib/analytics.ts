@@ -1,3 +1,4 @@
+import { parse } from "date-fns"
 import { redis } from "./redis"
 import { getDate } from "./utils"
 
@@ -35,6 +36,35 @@ export class Analytics {
         if (!opts?.persist) {
             await redis.expire(key, this.retention)
         }
+    }
+
+    async retrieveDays(namespace: string, daysBack: number) {
+        type AnalyticsPromise = ReturnType<typeof analytics.retrieve>
+        const promises: AnalyticsPromise[] = []
+
+        // push all retreive promises to promises array
+        for (let i = 0; i < daysBack; i++) {
+            const formattedDate = getDate(i);
+            const promise = analytics.retrieve(namespace, formattedDate);
+            promises.push(promise);
+        }
+
+        // execute all calls
+
+        const fetched = await Promise.all(promises);
+
+        const data = fetched.sort((a, b) => {
+            if (
+                parse(a.date, 'dd/MM/yyyy', new Date()) >
+                parse(b.date, 'dd/MM/yyyy', new Date())
+            ) {
+                return 1
+            } else {
+                return -1
+            }
+        })
+
+        return data
     }
 
     // retrieve data by days backs
