@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { analytics } from "@/lib/analytics";
 
 export default function middlware(req: NextRequest) {
+    console.log(process.env.REDIS_KEY)
     // if user is on the homepage, count as visitor
     if (req.nextUrl.pathname === "/") {
         try {
