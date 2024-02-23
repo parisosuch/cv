@@ -9,5 +9,5 @@ export function cn(...inputs: ClassValue[]) {
 export function getDate(sub: number = 0) {
   const dateXDaysAgo = subDays(new Date(), sub);
 
-  return format(dateXDaysAgo, "dd/MM/yyyy")
+  return format(dateXDaysAgo, "yyyy-MM-dd")
 }
