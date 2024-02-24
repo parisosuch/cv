@@ -6,10 +6,14 @@ export default async function middlware(req: NextRequest) {
   if (req.nextUrl.pathname === "/") {
     try {
       await analytics
-        .track("pageview", {
-          page: "/",
-          country: req.geo?.country,
-        })
+        .track(
+          "pageview",
+          {
+            page: "/",
+            country: req.geo?.country,
+          },
+          { persist: true }
+        )
         .then(() => {
           console.log("Successful track.");
         })
