@@ -33,15 +33,17 @@ export default async function Page() {
         return curr + Object.values(acc)[0]!;
       }, 0);
 
+    let quantStyle = "text-3xl font-semibold";
+
     return (
-      <Card className="w-1/2 flex flex-row justify-around">
+      <Card className="w-full p-2 sm:w-1/2 flex flex-row justify-around">
         <div>
-          <Title>Weekly Page Views</Title>
-          <p>{weeklyViewCount}</p>
+          <p>Weekly Page Views</p>
+          <p className={quantStyle}>{weeklyViewCount}</p>
         </div>
         <div>
-          <Title>Today&apos;s Page Views</Title>
-          <p>{todaysViewCount}</p>
+          <p>Today&apos;s Page Views</p>
+          <p className={quantStyle}>{todaysViewCount}</p>
         </div>
       </Card>
     );
