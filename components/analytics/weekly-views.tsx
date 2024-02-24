@@ -5,7 +5,7 @@ type ChartProps = {
   timeSeriesPageViews: Awaited<ReturnType<typeof analytics.retrieveDays>>;
 };
 
-export default function Chart(props: ChartProps) {
+export default function PageViewsChart(props: ChartProps) {
   let data = props.timeSeriesPageViews.map((day) => {
     let dp = {
       date: day.date,
