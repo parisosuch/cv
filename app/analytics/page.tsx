@@ -1,8 +1,7 @@
 import PageViewsChart from "@/components/analytics/weekly-views";
-import { Card, Title } from "@tremor/react";
+import { Card } from "@tremor/react";
 import { analytics } from "@/lib/analytics";
 import { getDate } from "@/lib/utils";
-import { time } from "console";
 
 export default async function Page() {
   let data = await analytics.retrieveDays("pageview", 7);
@@ -36,7 +35,7 @@ export default async function Page() {
     let quantStyle = "text-3xl font-semibold";
 
     return (
-      <Card className="w-full p-2 sm:w-1/2 flex flex-row justify-around">
+      <Card className="w-full p-2 flex flex-row justify-around">
         <div>
           <p>Weekly Page Views</p>
           <p className={quantStyle}>{weeklyViewCount}</p>
@@ -50,7 +49,7 @@ export default async function Page() {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-4 justify-center min-h-screen w-full">
+    <div className="flex flex-col items-center space-y-4 justify-center min-h-screen w-full sm:w-1/2">
       <h1 className="text-2xl sm:text-4xl font-bold">Site Analytics</h1>
       <Metrics timeSeriesPageViews={data} />
       <PageViewsChart timeSeriesPageViews={data} />
