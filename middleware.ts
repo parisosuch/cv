@@ -4,6 +4,7 @@ import { analytics } from "@/lib/analytics";
 export default function middlware(req: NextRequest) {
     // if user is on the homepage, count as visitor
     if (req.nextUrl.pathname === "/") {
+        console.log("Hit homepage.")
         try {
             analytics.track('pageview', {
                 page: '/',
