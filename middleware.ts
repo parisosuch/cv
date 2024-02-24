@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { analytics } from "@/lib/analytics";
 
-export default function middlware(req: NextRequest) {
+export default async function middlware(req: NextRequest) {
     // if user is on the homepage, count as visitor
     if (req.nextUrl.pathname === "/") {
         console.log("Hit homepage.")
@@ -9,9 +9,8 @@ export default function middlware(req: NextRequest) {
             analytics.track('pageview', {
                 page: '/',
                 country: req.geo?.country,
-            }).then(() => {
-                console.log("track successful.")
-            })
+            });
+            console.log("successful track.")
         } catch (err) {
             // fail silently during attempt
             console.error(err)
