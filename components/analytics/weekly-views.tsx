@@ -6,7 +6,6 @@ type ChartProps = {
 };
 
 export default function Chart(props: ChartProps) {
-  console.log("here");
   let data = props.timeSeriesPageViews.map((day) => {
     let dp = {
       date: day.date,
@@ -16,8 +15,6 @@ export default function Chart(props: ChartProps) {
     };
     return dp;
   });
-
-  console.log(data);
 
   return (
     <Card className="w-full p-2 sm:w-1/2 h-1/2">
