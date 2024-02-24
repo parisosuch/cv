@@ -9,8 +9,10 @@ export default async function middlware(req: NextRequest) {
             analytics.track('pageview', {
                 page: '/',
                 country: req.geo?.country,
+            }).then(() => {
+                console.log("Successful track.")
             });
-            console.log("successful track.")
+
         } catch (err) {
             // fail silently during attempt
             console.error(err)
