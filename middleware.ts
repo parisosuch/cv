@@ -11,6 +11,8 @@ export default async function middlware(req: NextRequest) {
                 country: req.geo?.country,
             }).then(() => {
                 console.log("Successful track.")
+            }).catch((err) => {
+                console.error(err);
             });
 
         } catch (err) {
