@@ -1,4 +1,7 @@
+"use client";
+
 import { Badge } from "./ui/badge";
+import { analytics } from "@/lib/analytics";
 
 let projects = [
   {
@@ -23,13 +26,25 @@ let projects = [
   },
   {
     name: "CV",
-    description: "Quick and clean CV website. What you are currently looking at right now.",
+    description:
+      "Quick and clean CV website. What you are currently looking at right now.",
     url: "https://github.com/parisosuch-dev/cv",
     tags: ["NextJS", "Tailwind", "Vercel", "Shadcn"],
   },
 ];
 
 export default function Projects() {
+  const trackProjectView = async (projectName: string) => {
+    await analytics
+      .track("projectview", { project: projectName })
+      .then(() => {
+        console.log("Successful projectview track.");
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
   return (
     <div className="w-full space-y-2">
       <h1 className="text-lg sm:text-2xl font-bold">Projects</h1>
@@ -40,7 +55,11 @@ export default function Projects() {
             className="space-y-2 border-2 border-gray-200 shadow-sm rounded-md p-2"
           >
             <h2 className="font-semibold text-sm sm:text-lg hover:underline">
-              <a href={project.url} target="_blank">
+              <a
+                href={project.url}
+                target="_blank"
+                onClick={() => trackProjectView(project.name)}
+              >
                 {project.name}
               </a>
             </h2>
