@@ -6,7 +6,7 @@ export default async function middlware(req: NextRequest) {
     if (req.nextUrl.pathname === "/") {
         console.log("Hit homepage.")
         try {
-            analytics.track('pageview', {
+            await analytics.track('pageview', {
                 page: '/',
                 country: req.geo?.country,
             }).then(() => {
