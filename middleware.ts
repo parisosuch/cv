@@ -8,6 +8,8 @@ export default function middlware(req: NextRequest) {
             analytics.track('pageview', {
                 page: '/',
                 country: req.geo?.country,
+            }).then(() => {
+                console.log("track successful.")
             })
         } catch (err) {
             // fail silently during attempt
