@@ -3,6 +3,9 @@ import { Card } from "@tremor/react";
 import { analytics } from "@/lib/analytics";
 import { getDate } from "@/lib/utils";
 
+import { BsArrowLeftShort } from "react-icons/bs";
+import Link from "next/link";
+
 export default async function Page() {
   let data = await analytics.retrieveDays("pageview", 7);
 
@@ -89,9 +92,10 @@ export default async function Page() {
 
   return (
     <div className="flex flex-col items-center space-y-4 justify-center min-h-screen w-full sm:w-1/2">
-      <h1 className="text-2xl sm:text-4xl font-bold">Site Analytics</h1>
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4 align-bottom">Site Analytics</h1>
       <Metrics timeSeriesPageViews={data} projectViews={projectData} />
       <PageViewsChart timeSeriesPageViews={data} />
+      <Link href="/" className="underline">back to site</Link>
     </div>
   );
 }
