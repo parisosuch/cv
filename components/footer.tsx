@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div className="w-full text-center">
             <p className="text-xs">designed by paris osuch // {year}</p>
-            <a href="/" className="underline text-xs">site analytics</a>
+            <a href="/analytics" className="underline text-xs">site analytics</a>
         </div>
     )
 }
