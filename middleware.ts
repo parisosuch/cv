@@ -25,6 +25,6 @@ export default async function middlware(req: NextRequest) {
 }
 
 // determine what paths middleware runs on
-export const matcher = {
+export const config = {
   matcher: ["'/((?!api|_next/static|_next/image|favicon.ico|analytics).*)'"],
 };
