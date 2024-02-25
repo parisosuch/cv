@@ -81,6 +81,18 @@ export class Analytics {
       })),
     };
   }
+
+  async retrievePersistent(namespace: string) {
+    const res = await redis.hgetall<Record<string, string>>(
+      `analytics::${namespace}`
+    );
+
+    return {
+      events: Object.entries(res ?? []).map(([key, value]) => ({
+        [key]: Number(value),
+      })),
+    };
+  }
 }
 
 export const analytics = new Analytics();

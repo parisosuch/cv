@@ -17,7 +17,7 @@ export default function PageViewsChart(props: ChartProps) {
   });
 
   return (
-    <Card className="w-full p-2 h-1/2">
+    <Card className="w-full p-2">
       <Title className="text-center">Total Vistors Per Day</Title>
       <BarChart
         className="font-mono py-4"
