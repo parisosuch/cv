@@ -1,18 +1,12 @@
-"use client"
-
 import PageViewsChart from "@/components/analytics/weekly-views";
 import { Card } from "@tremor/react";
 import { analytics } from "@/lib/analytics";
 import { getDate } from "@/lib/utils";
 
-import { useRouter } from "next/navigation";
-
 export default async function Page() {
   let data = await analytics.retrieveDays("pageview", 7);
 
   let projectData = await analytics.retrievePersistent("projectview");
-
-  const router = useRouter();
 
   const Metrics = ({
     timeSeriesPageViews,
@@ -98,7 +92,7 @@ export default async function Page() {
       <h1 className="text-2xl sm:text-4xl font-bold mb-4 align-bottom">Site Analytics</h1>
       <Metrics timeSeriesPageViews={data} projectViews={projectData} />
       <PageViewsChart timeSeriesPageViews={data} />
-      <button onClick={() => router.push('/')}>back to site</button>
+      <a href="/analytics">back to site</a>
     </div>
   );
 }
