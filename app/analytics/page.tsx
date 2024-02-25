@@ -66,7 +66,7 @@ export default async function Page() {
     let quantStyle = "text-3xl font-semibold";
 
     return (
-      <Card className="w-full p-2 flex flex-row justify-around">
+      <Card className="w-full p-2 grid grid-cols-2 sm:grid-cols-4 justify-items-center">
         <div>
           <p>Weekly Page Views</p>
           <p className={quantStyle}>{weeklyViewCount}</p>
