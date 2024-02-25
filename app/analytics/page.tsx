@@ -92,7 +92,7 @@ export default async function Page() {
       <h1 className="text-2xl sm:text-4xl font-bold mb-4 align-bottom">Site Analytics</h1>
       <Metrics timeSeriesPageViews={data} projectViews={projectData} />
       <PageViewsChart timeSeriesPageViews={data} />
-      <a href="/">back to site</a>
+      <a href="/" className="underline">back to site</a>
     </div>
   );
 }
