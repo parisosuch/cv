@@ -36,7 +36,7 @@ let projects = [
 export default function Projects() {
   const trackProjectView = async (projectName: string) => {
     await analytics
-      .track("projectview", { project: projectName })
+      .track("projectview", { project: projectName }, { persist: true })
       .then(() => {
         console.log("Successful projectview track.");
       })
