@@ -1,11 +1,17 @@
 let experience = [
   {
+    name: "Jackson Family Wines",
+    position: "Associate Developer",
+    start: "2024",
+    end: "Current",
+  },
+  {
     name: "Nelson & Kennard",
     position: "Junior Software Engineer",
     summary:
       "Automated business processes using Python, Pandas, and SQL. Developed scalable back-end services with Django and Flask, designed user-friendly interfaces using React and Tailwind CSS. Created REST API Logging microservice, applied Pandas for data analysis, enhancing efficiency and supporting data-driven decisions.",
     start: "2023",
-    end: "Current",
+    end: "2024",
   },
   {
     name: "Sonoma State University",
