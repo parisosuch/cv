@@ -6,23 +6,26 @@ import { BsGithub, BsLinkedin, BsGlobe, BsMailbox } from "react-icons/bs";
 let data = {
   name: "Paris Osuch",
   initials: "PO",
-  summary: "Full Stack Engineer and Designer. Avid Space Enjoyer.",
-  location: "Sacramento, CA. United States.",
+  summary: "Full Stack Engineer and Designer. Space Enthusiast.",
+  location: "California, United States.",
   socials: [
     {
       name: "Github",
       icon: <BsGithub className="size-6" />,
       url: "https://github.com/parisosuch-dev/",
+      aria: "Github"
     },
     {
       name: "LinkedIn",
       icon: <BsLinkedin className="size-6" />,
       url: "https://www.linkedin.com/in/parisosuch/",
+      aria: "Linkedin"
     },
     {
       name: "Mail",
       icon: <BsMailbox className="size-6" />,
       url: "mailto:paris@parisosuch.com",
+      aria: "Mailbox"
     },
   ],
   avatar: {
@@ -47,7 +50,7 @@ export default function Header() {
         <div className="space-x-2">
           {data.socials.map((social, index) => (
             <Button variant="outline" size="icon" key={index} asChild>
-              <a href={social.url} target="_blank">
+              <a href={social.url} target="_blank" aria-label={social.aria}>
                 {social.icon}
               </a>
             </Button>
