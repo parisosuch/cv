@@ -22,6 +22,9 @@ let skills = [
   "Pandas",
   "Matplotlib",
   "Figma",
+  "MSSQL",
+  "RESTful APIs",
+  "Workflow Automation"
 ];
 
 export default function Skills() {
