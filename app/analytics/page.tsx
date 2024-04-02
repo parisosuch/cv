@@ -4,7 +4,7 @@ import { analytics } from "@/lib/analytics";
 import { getDate } from "@/lib/utils";
 
 export default async function Page() {
-  let data = await analytics.retrieveDays("pageview", 7);
+  let data = await analytics.retrieveDays("pageview", 31);
 
   let projectData = await analytics.retrievePersistent("projectview");
 
@@ -15,7 +15,7 @@ export default async function Page() {
     projectViews: Awaited<ReturnType<typeof analytics.retrievePersistent>>
   }) => {
     // calculate weekly view count
-    let weeklyViewCount = timeSeriesPageViews
+    let monthlyViewCount = timeSeriesPageViews
       .map((date) => {
         let count = date.events.reduce((acc, curr) => {
           return acc + Object.values(curr)[0]!;
@@ -68,8 +68,8 @@ export default async function Page() {
     return (
       <Card className="w-full p-2 grid grid-cols-2 sm:grid-cols-4 justify-items-center">
         <div>
-          <p>Weekly Page Views</p>
-          <p className={quantStyle}>{weeklyViewCount}</p>
+          <p>Monthly Page Views</p>
+          <p className={quantStyle}>{monthlyViewCount}</p>
         </div>
         <div>
           <p>Today&apos;s Page Views</p>

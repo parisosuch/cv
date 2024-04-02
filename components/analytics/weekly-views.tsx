@@ -18,7 +18,7 @@ export default function PageViewsChart(props: ChartProps) {
 
   return (
     <Card className="w-full p-2">
-      <Title className="text-center">Total Vistors Per Day</Title>
+      <Title className="text-center">Daily Visitors</Title>
       <BarChart
         className="font-mono py-4"
         data={data}
@@ -27,6 +27,7 @@ export default function PageViewsChart(props: ChartProps) {
         noDataText="loading..."
         showAnimation
         colors={["slate-950"]}
+        showXAxis={false}
       />
     </Card>
   );
