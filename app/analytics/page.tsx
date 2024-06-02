@@ -4,7 +4,7 @@ import { analytics } from "@/lib/analytics";
 import { getDate } from "@/lib/utils";
 
 export default async function Page() {
-  let data = await analytics.retrieveDays("pageview", 31);
+  let data = await analytics.retrieveDays("pageview", 14);
 
   let projectData = await analytics.retrievePersistent("projectview");
 
@@ -12,7 +12,7 @@ export default async function Page() {
     timeSeriesPageViews,
   }: {
     timeSeriesPageViews: Awaited<ReturnType<typeof analytics.retrieveDays>>;
-    projectViews: Awaited<ReturnType<typeof analytics.retrievePersistent>>
+    projectViews: Awaited<ReturnType<typeof analytics.retrievePersistent>>;
   }) => {
     // calculate weekly view count
     let monthlyViewCount = timeSeriesPageViews
@@ -48,7 +48,8 @@ export default async function Page() {
         if (event.hasOwnProperty(key)) {
           const projectObj = JSON.parse(key);
           const projectName = projectObj.project;
-          projectCounts[projectName] = (projectCounts[projectName] || 0) + event[key];
+          projectCounts[projectName] =
+            (projectCounts[projectName] || 0) + event[key];
         }
       }
     }
@@ -89,10 +90,14 @@ export default async function Page() {
 
   return (
     <div className="flex flex-col items-center space-y-4 justify-center min-h-screen w-full sm:w-1/2">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-4 align-bottom">Site Analytics</h1>
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4 align-bottom">
+        Site Analytics
+      </h1>
       <Metrics timeSeriesPageViews={data} projectViews={projectData} />
       <PageViewsChart timeSeriesPageViews={data} />
-      <a href="/" className="underline">back to site</a>
+      <a href="/" className="underline">
+        back to site
+      </a>
     </div>
   );
 }
