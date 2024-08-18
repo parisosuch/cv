@@ -1,12 +1,12 @@
 let experience = [
   {
-    name: "Jackson Family Wines",
+    name: "Jackson Family Wines - Santa Rosa, CA",
     position: "Associate Developer",
     start: "2024",
     end: "Current",
   },
   {
-    name: "Nelson & Kennard",
+    name: "Nelson & Kennard - Sacramento, CA",
     position: "Junior Software Engineer",
     summary:
       "Automated business processes using Python, Pandas, and SQL. Developed scalable back-end services with Django and Flask, designed user-friendly interfaces using React and Tailwind CSS. Created REST API Logging microservice, applied Pandas for data analysis, enhancing efficiency and supporting data-driven decisions.",
@@ -14,7 +14,7 @@ let experience = [
     end: "2024",
   },
   {
-    name: "Sonoma State University",
+    name: "Sonoma State University - Rohnert Park, CA",
     position: "Undergraduate Researcher",
     summary:
       "Recipient of the Koret Scholarship to develop the open-source Python library QCpy, focusing on simulating quantum circuits. Part of an undergraduate team uniquely invited to SIGCSE 2023, a prestigious international conference for computer science education. Coauthored a peer-reviewed abstract published in the ACM Digital Library of research papers.",
@@ -22,7 +22,7 @@ let experience = [
     end: "2023",
   },
   {
-    name: "Sonoma State University",
+    name: "Sonoma State University - Rohnert Park, CA",
     position: "Web Developer",
     summary:
       "Utilized Drupal, HTML5, CSS3, and JavaScript to generate content for department sites. Achieved a 12% increase in site traffic, as per Google Analytics, through effective Search Engine Optimization (SEO) strategies. Automated legacy site content retrieval using web scraping with Beautiful Soup 4 in Python.",
