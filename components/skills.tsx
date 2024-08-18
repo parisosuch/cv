@@ -22,7 +22,8 @@ let skills = [
   "Pandas",
   "Matplotlib",
   "Figma",
-  "MSSQL",
+  "T-SQL",
+  "DB2 SQL",
   "RESTful APIs",
   "Workflow Automation"
 ];
