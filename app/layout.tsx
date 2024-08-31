@@ -9,9 +9,6 @@ import { CSPostHogProvider } from "./providers";
 export const metadata: Metadata = {
   title: "Paris Osuch",
   description: "Paris Osuch // Full Stack Engineer and Designer.",
-  icons: {
-    icon: "/favicon.co",
-  },
 };
 
 export default function RootLayout({
