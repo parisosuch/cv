@@ -5,24 +5,11 @@ import { analytics } from "@/lib/analytics";
 
 let projects = [
   {
-    name: "Hyprcrd",
-    description:
-      "Link-in-bio web application. Built-in QR code generator to share profiles in person.",
-    url: "https://hyprcrd.com/paris",
-    tags: ["React", "JS", "Tailwind", "Firebase", "Figma"],
-  },
-  {
     name: "QCpy",
     description:
       "Open source quantum computing Python library. Team invited to SIGCSE 2023 to present project.",
     url: "https://github.com/QCpython/QCpy",
     tags: ["Python", "Numpy", "Quantum Computing", "OSS", "Research"],
-  },
-  {
-    name: "Copycat",
-    description: "Open source and self-hostable logging RESTful API.",
-    url: "https://github.com/parisosuch-dev/copycat",
-    tags: ["Python", "Django", "Django Rest Framework", "REST", "API"],
   },
   {
     name: "CV",
