@@ -1,5 +1,6 @@
 "use client";
 
+import { Github } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { analytics } from "@/lib/analytics";
 
@@ -41,15 +42,18 @@ export default function Projects() {
             key={index}
             className="space-y-2 border-2 border-gray-200 shadow-sm rounded-md p-2"
           >
-            <h2 className="font-semibold text-sm sm:text-lg hover:underline">
+            <div className="flex flex-row items-center justify-between w-full">
+              <h2 className="font-semibold text-sm sm:text-lg hover:underline">
+                {project.name}
+              </h2>
               <a
                 href={project.url}
                 target="_blank"
                 onClick={() => trackProjectView(project.name)}
               >
-                {project.name}
+                <Github size={18} />
               </a>
-            </h2>
+            </div>
             <p className="text-xs font-mono">{project.description}</p>
             <div>
               {project.tags.map((tag, tagIndex) => (
