@@ -13,7 +13,7 @@ const nextConfig = {
           has: [
             {
               type: "host",
-              value: "app.acme.com",
+              value: "app.parisosuch.com",
             },
           ],
           destination: "/app/:path*",
