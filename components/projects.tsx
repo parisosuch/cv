@@ -2,7 +2,6 @@
 
 import { Github } from "lucide-react";
 import { Badge } from "./ui/badge";
-import { analytics } from "@/lib/analytics";
 
 let projects = [
   {
@@ -22,17 +21,6 @@ let projects = [
 ];
 
 export default function Projects() {
-  const trackProjectView = async (projectName: string) => {
-    await analytics
-      .track("projectview", { project: projectName }, { persist: true })
-      .then(() => {
-        console.log("Successful projectview track.");
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  };
-
   return (
     <div className="w-full space-y-2">
       <h1 className="text-lg sm:text-2xl font-bold">Projects</h1>
@@ -46,11 +34,7 @@ export default function Projects() {
               <h2 className="font-semibold text-sm sm:text-lg hover:underline">
                 {project.name}
               </h2>
-              <a
-                href={project.url}
-                target="_blank"
-                onClick={() => trackProjectView(project.name)}
-              >
+              <a href={project.url} target="_blank">
                 <Github size={18} />
               </a>
             </div>
