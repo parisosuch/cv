@@ -18,6 +18,12 @@ let projects = [
     url: "https://github.com/parisosuch-dev/cv",
     tags: ["NextJS", "Tailwind", "Vercel", "Shadcn"],
   },
+  {
+    name: "Roseville Open Budget",
+    description: "Dashboard that displays Roseville, CA expenses and revenues.",
+    url: "https://github.com/parisosuch-dev/roseville-open-budget",
+    tags: ["NextJS", "Tailwind", "Vercel", "Supabase", "Postgres"],
+  },
 ];
 
 export default function Projects() {
