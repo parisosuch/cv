@@ -12,7 +12,7 @@ let data = {
     {
       name: "Github",
       icon: <BsGithub className="size-6" />,
-      url: "https://github.com/parisosuch-dev/",
+      url: "https://github.com/parisosuch/",
       aria: "Github"
     },
     {
