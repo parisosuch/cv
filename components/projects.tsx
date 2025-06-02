@@ -16,14 +16,14 @@ let projects = [
     description:
       "Quick and clean CV website. What you are currently looking at right now.",
     url: "https://parisosuch.com",
-    github: "https://github.com/parisosuch-dev/cv",
+    github: "https://github.com/parisosuch/cv",
     tags: ["NextJS", "Tailwind", "Vercel", "Shadcn"],
   },
   {
     name: "Roseville Open Budget",
     description: "Dashboard that displays Roseville, CA expenses and revenues.",
     url: "https://rosevilleopenbudget.org",
-    github: "https://github.com/parisosuch-dev/roseville-open-budget",
+    github: "https://github.com/parisosuch/roseville-open-budget",
     tags: ["NextJS", "Tailwind", "Vercel", "Supabase", "Postgres"],
   },
 ];
