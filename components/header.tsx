@@ -6,7 +6,7 @@ import { BsGithub, BsLinkedin, BsGlobe, BsMailbox } from "react-icons/bs";
 let data = {
   name: "Paris Osuch",
   initials: "PO",
-  summary: "Full Stack Engineer and Designer. Space Enthusiast.",
+  summary: "Full Stack Software Engineer. Space Enthusiast.",
   location: "California, United States.",
   socials: [
     {
