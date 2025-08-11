@@ -1,6 +1,6 @@
 let data = {
   about:
-    "Experienced Full Stack Engineer with a passion for creating seamless user experiences. Over four years of hands-on experience in developing and implementing robust web applications. Proficient in both front-end and back-end technologies, with a keen focus on user-centric design. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.",
+    "Eccentric full stack software engineer with over 6 years of professional experience. Paris is keen on creating a seemless user experience and often explores new technology stacks to implement into his workflow.",
 };
 
 export default function About() {
