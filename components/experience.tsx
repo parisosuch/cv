@@ -1,7 +1,7 @@
 let experience = [
   {
     name: "Jackson Family Wines - Santa Rosa, CA",
-    position: "Associate Developer",
+    position: "Software Developer",
     start: "2024",
     end: "Current",
   },
