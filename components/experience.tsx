@@ -8,7 +8,7 @@ let experience = [
   {
     name: "Nelson & Kennard - Sacramento, CA",
     position: "Junior Software Engineer",
-    summary: "Automated business processes using Python and T-SQL. Managed a legacy automation engine built in Flask. Led and coordinated a project to migrate the legacy automation engine to a Django RESTful API. This project included a front-end application built in NextJS 13 and Typescript.",
+    summary: "Automated business processes using Python and T-SQL. Managed a legacy automation engine built in Flask. Led and coordinated a project to migrate the legacy automation engine to a Django RESTful API. This project included a front-end application built in NextJS 13, Typescript, and Tailwindcss.",
     start: "2023",
     end: "2024",
   },
