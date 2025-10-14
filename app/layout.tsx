@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <script
         defer
-        src="https://cloud.umami.is/script.js"
-        data-website-id="f4a23aaa-fef9-40d3-ae19-963790313409"
+        src="https://umami.parisdeploy.space/script.js"
+        data-website-id="4d30c252-9a4e-4bc1-864b-520c2c235ea7"
       ></script>
       <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
         <div className="w-full flex justify-center p-2 sm:p-0 bg-gray-100">
